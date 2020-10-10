@@ -4,11 +4,15 @@ const Login = (props) => {
 const {email,setEmail,password,setPassword,handleLogin,handleSignup, errorEmail,errorPassword,hasAccount,setHasAccount } = props;
     return (
         <section className="login">
-            <div className="login_container">
-                <h1>Login</h1>
+            <div className="login_container">              
+                    {hasAccount ? 
+                    <h1>Sign In</h1>
+                    :
+                    <h1>Sign Up</h1>
+                    }        
                 <label>Email</label>
                 <input 
-                type="text" autoFocus required 
+                type="email" autoFocus required 
                 placeholder="Email" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value) }
@@ -16,7 +20,7 @@ const {email,setEmail,password,setPassword,handleLogin,handleSignup, errorEmail,
                 <p className="errorMsg">{errorEmail}</p>
                 <label>Password</label>
                 <input 
-                type="text" 
+                type="password" 
                 autoFocus required 
                 placeholder="Password" 
                 value={password}

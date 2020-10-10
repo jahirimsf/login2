@@ -22,7 +22,9 @@ function App() {
     setErrorPassword('');
   }
   const handleLogin = () => {
+    clearInput();
     clearErrorMsg();
+
     fireb
     .auth()
     .signInWithEmailAndPassword(email,password)
@@ -43,6 +45,7 @@ function App() {
 
   const handleSignup = () => {
     clearErrorMsg();
+    clearInput();
     fireb
     .auth()
     .createUserWithEmailAndPassword(email, password)
@@ -67,7 +70,7 @@ function App() {
 
     fireb.auth().onAuthStateChanged((user) => {
       if(user){
-        clearInput();
+
         setUser(user)
       } else {
         setUser("");

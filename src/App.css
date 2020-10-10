@@ -4,3 +4,136 @@
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #e94560;
+    color: #fff;
+    padding: 14px 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 14px 0;
+}
+
+.btn:hover{
+    background:#0f3460 ;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(2px);
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    background: #c3aed6;
+    color: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.login_container{
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+    background: #1a1a2e;
+    padding: 40px 32px;
+    
+    box-shadow: 2px 8px 25px 2px rgba(0,0,0,0.3);
+}
+
+.login_container h1{
+    display: block;
+    text-align: center;
+    margin: 5px 0 20px 0;
+}
+
+.login_container label{
+    display: block;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.login_container input {
+    padding: 16px;
+    background: #16213E;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.errorMsg {
+    margin: 5px 0;
+    color: red;
+    font-size: 14px;
+}
+.btn_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+}
+.btn_p{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.btn_p span{
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ffd57e;
+    cursor: pointer;
+}
+
+.btn_p span:hover{
+    color: #e94560;
+    transition: all .3s ease-in-out;
+}
+
+.hero{
+    background: #0f3460;
+    color: #fff;
+    height: 100vh;
+}
+
+.hero_container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: #16213e;
+    width: 100%;
+    height: 80px;
+}
+.hero_container nav h1{
+    padding: 0 80px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+.btn_logout{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #0f3460;
+    color: #fff;
+    padding: 14px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 20px;
+}
+.btn_logout:hover{
+    background: #e94560;
+    transform: translateX(2px);
+}
